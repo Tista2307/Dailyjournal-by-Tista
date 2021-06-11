@@ -1,0 +1,13 @@
+<%- include("partials/header") -%> 
+
+<% for(var i=0;i<arrs.length;i++){ %>
+  
+<h2><%= arrs[i].title %> </h2> 
+<% if(arrs[i].post.length>100){ %> 
+    <p><%= arrs[i].post.substring(0,100) %> ... <a href="/post/<%= arrs[i].title %>" URL >READ MORE</a></p>
+    
+    <% } %>  
+    
+
+<% } %> 
+<%- include("partials/footer") -%> 
